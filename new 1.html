@@ -6,10 +6,10 @@
 	if ( "Notification" in window ) {
 		let ask = Notification.requestPermission();
 		ask.then( permission => {
-			if ( permission === "granted" ) {
-				let msg = new Notification( "This is the Title of the notification", {
-				body: "Hello, World", 
-				icon: "Ritaj.gif",
+			if ( permission === "" ) {
+				let msg = new Notification( "", {
+				body: "", 
+				icon: "",
 				});
 			}
 			});
